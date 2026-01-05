@@ -1,5 +1,10 @@
-person = {"name": "Ali", "age": 25, "city": "Tashkent"}
+inventory = {'apple': 10,
+    'banana': 5
+}
 
-del person['city']
+product = input('praduct: ')
 
-print(person)
+if product not in inventory:
+    inventory[product] = 0
+
+print(inventory)
